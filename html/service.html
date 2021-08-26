@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Dịch Vụ</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/service.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+  <body>
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">ULibrary</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">Về Chúng Tôi</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="service.html">Dịch Vụ</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header-->
+    <header class="masthead" style="background-image: url('../assets/img/service/header.jpg')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="site-heading">
+                        <h1>Dịch Vụ</h1>
+                        <span class="subheading">Hỗ trợ mượn sách tại thư viện</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="content">
+      <div class="tab">
+        <button class="tablinks" onclick="openService(event, 'DKMT')" id="defaultOpen"><i class="fa fa-vcard"></i> Đăng ký mở thẻ</button>
+        <button class="tablinks" onclick="openService(event, 'MTTL')"><i class="fa fa-book"></i> Mượn trả tài liệu</button>
+        <button class="tablinks" onclick="openService(event, 'QHTP')"><i class="fa fa-money"></i> Quá hạn và tiền phạt</button>
+        <button class="tablinks" onclick="openService(event, 'YCBSTL')"><i class="fa fa-exclamation-circle"></i> Yêu cầu bổ sung tài liệu</button>
+        <button class="tablinks" onclick="openService(event, 'QTSD')"><i class="fa fa-question-circle"></i> Quy trình sử dụng</button>
+      </div>
+      <div id="DKMT" class="tabcontent">
+        <h2>ĐĂNG KÍ MỞ THẺ</h2>
+        <!--Register Form-->
+        <p>Vui lòng điền form dưới đây để đăng ký mở thẻ</p>
+        <hr/>
+        <div>
+          <!-- * * * * * * * * * * * * * * *-->
+          <!-- * * SB Forms Contact Form * *-->
+          <!-- * * * * * * * * * * * * * * *-->
+          <!-- This form is pre-integrated with SB Forms.-->
+          <!-- To make this form functional, sign up at-->
+          <!-- https://startbootstrap.com/solution/contact-forms-->
+          <!-- to get an API token!-->
+          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+              <div class="form-floating">
+                  <input class="form-control" id="name" type="text" placeholder="Nhập họ và tên..." data-sb-validations="required" />
+                  <label for="name">Họ và Tên</label>
+
+              </div>
+              <div class="form-floating">
+                  <input class="form-control" id="email" type="email" placeholder="Nhập email..." data-sb-validations="required,email" />
+                  <label for="email">Email</label>
+                  
+              </div>
+              <div class="form-floating">
+                  <input class="form-control" id="phone" type="tel" placeholder="Nhập số điện thoại..." data-sb-validations="required" />
+                  <label for="phone">Số Điện Thoại</label>
+                  
+              </div>
+              <div class="form-floating">
+                <input class="form-control" id="cmnd" type="number" placeholder="Nhập CMND/CCCD..." data-sb-validations="required" />
+                <label for="phone">CMND/CCCD</label>
+
+              </div>
+              <br />
+              <!-- Submit Button-->
+              <button class="btn btn-primary text-uppercase " id="submitButton" type="submit">Hoàn Thành</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="MTTL" class="tabcontent">
+        <h2>MƯỢN TRẢ TÀI LIỆU</h2>
+        <p><b style="display: inline">1. Tài liệu được mượn về: </b>Sách kho mượn, giáo trình</p>
+        <b>2. Tài liệu không được mượn về: </b>
+        <dl>
+          <dt>- Luận văn, luận án, khóa luận</dt>
+          <dt>- Báo - tạp chí</dt>
+          <dt>- Băng đĩa</dt>
+          <dt>- Tài liệu tra cứu (Từ điển, bách khoa toàn thư,...)</dt>
+        </dl>
+        <b>3. Chính sách cho mượn</b> <br/>
+        <p><b style="display: inline">3.1. Mượn tài liệu đọc tại chỗ: </b>tối đa được mang ra 2 tài liệu. </p>
+        <b>3.2. Mượn sách mang về: </b> 
+        <!-- Trigger the Modal -->
+          <img id="myImg" src="../assets/img/service/rules.png" alt="Quy định mượn sách">
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+          <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+          <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+          <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+          </div>
+        <b>Lưu ý: </b>
+        <dl>
+          <dt>- Số lượng tại liệu: Là những con số tối đang được phép mượn về.</dt>
+          <dt>- Không được mượn quá 1 bản/1 nhan đề sách, giáo trình.</dt>
+          <dt>- Tài liệu Thư viện Ulibrary quá hạn bị phạt 5000đ/ngày/1 tài liệu.</dt>
+        </dl>
+      </p>
+      </div>
+
+      <div id="QHTP" class="tabcontent">
+        <h2>QUÁ HẠN VÀ TIỀN PHẠT</h2>
+        
+          <p><b style="display: inline">Xử lí vi phạm: </b>Bạn đọc sẽ bị xử phạt bằng tiền nếu mượn tài liệu vượt quá thời gian theo quy định. </p>
+          <b>Mức phạt cụ thể như sau: </b>
+          <dl>
+            <dt>- Phạt quá hạn tài liệu: Phạt 2.000 đồng/1 tài liệu/1 ngày.</dt>
+            <dt>- Làm hư hỏng (rách, làm ướt, viết, tẩy xóa,...), mất sách:</dt>
+            <dd>+ Đối với sách: đền tiền phạt gấp 3 lần giá trị tài liệu.</dd>
+            <dd>+ Đối với giáo trình: xử phạt tiền gấp 2 lần giá trị tài liệu.</dd>
+          </dl>
+          <p style="text-align: justify">
+          Sau 30 ngày kể từ ngày quá hạn tài liệu mà người mượn chưa trả hoặc nộp phạt tài liệu bị quá hạn thì 
+          Thư viện sẽ gửi danh sách đến các Khoa/Bộ môn/Phòng có liên quan hỗ trợ thông báo về danh sách người 
+          mượn nợ này (Các Khoa/Bộ môn/Phòng Tổ chức hành chính, Phòng Đào tạo Sau đại học, Phòng Đào tạo Đại học, 
+          Phòng Công tác sinh viên). Nếu sau thời hạn 03 tháng kể từ ngày Thư viện và các Khoa/Bộ môn/Phòng có 
+          liên quan đã thông báo mà người mượn là sinh viên vẫn chưa trả hoặc đóng phạt tài liệu bị quá hạn thì 
+          sẽ bị xử lý bằng hình thức ngăn chặn đăng ký học phần trong học kì kế tiếp hoặc không xét tốt nghiệp (nếu 
+          là sinh viên/học viên cao học năm cuối).
+        </p>
+      </div>
+
+      <div id="YCBSTL" class="tabcontent">
+        <h2>YÊU CẦU BỔ SUNG TÀI LIỆU</h2>
+        <p>Vui lòng điền thông tin tài liệu</p>
+        <hr/>
+        <!--Required Form-->
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <div class="form-floating">
+              <input class="form-control" id="bookname" type="text" placeholder="Nhập tên sách..." data-sb-validations="required" />
+              <label for="bookname">Tên Sách</label>
+
+          </div>
+          <div class="form-floating">
+              <input class="form-control" id="author" type="text" placeholder="Nhập tên tác giả..." data-sb-validations="required" />
+              <label for="author">Tác Giả</label>
+              
+          </div>
+          <div class="form-floating">
+              <input class="form-control" id="publisher" type="text" placeholder="Nhập tên NXB..." data-sb-validations="required" />
+              <label for="publisher">Nhà Xuất Bản</label>
+              
+          </div>
+          <div class="form-floating">
+            <input class="form-control" id="year" type="number" placeholder="Nhập năm phát hành..." data-sb-validations="required" />
+            <label for="year">Năm Phát Hành</label>
+
+          </div>
+          <br />
+          <!-- Submit Button-->
+          <button class="btn btn-primary text-uppercase " id="submitButton" type="submit">Hoàn Thành</button>
+      </form>
+
+      </div>
+
+      <div id="QTSD" class="tabcontent">
+        <h2>QUY TRÌNH SỬ DỤNG</h2>
+        <p>
+          <b style="display: inline">1. Tài liệu hướng dẫn sử dụng thư viện</b> (Bạn đọc vui lòng xem file đính kèm):<br/>
+          <a href="#">Hướng dẫn sử dụng thư viện 2020.</a>
+          <p><b>2. Một số lưu ý khi bạn đọc sử dụng tài liệu số </b> </p>
+
+          <dl>
+            <dt>- Bạn đọc cần đăng nhập bằng tài khoản chứng thực của Trường để có thể đọc tài liệu.</dt>
+            <dt>- Chỉ hỗ trợ đọc online, không hỗ trợ tải về (trừ những tài liệu do thư viện sưu tầm từ các nguồn mở khác).</dt>
+            <dt>- Đối với các tài liệu xám (Luận án, luận văn, khóa luận), những bạn đọc làm công tác nghiên cứu có nhu cầu in ấn,
+            Thư viện sẽ hỗ trợ in tối đa 10% nội dung để tiện cho việc tham khảo (Vui lòng liên hệ quầy thủ thư).</dt>
+          </dl>
+        </p>
+        <hr/>
+      </div>
+    </div>
+
+
+    <script src="../js/service.js"></script>
+    <script src="../js/scripts.js"></script>
+    </body>
+</html> 
